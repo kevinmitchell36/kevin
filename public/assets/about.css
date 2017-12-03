@@ -1,5 +1,5 @@
-.jumbotron-fluid {
-  background-image: url("https://media.cntraveler.com/photos/571fbcdffe5fd76f60bc1891/master/pass/kirkjufell-iceland-GettyImages-519340720.jpg");
+.jumbotron {
+  background-image: url("http://cdn.history.com/sites/2/2014/01/kheti-tomb-P.jpeg");
     background-color: #17234E;
     margin-bottom: 0;
     min-height: 50%;
@@ -17,3 +17,6 @@
   margin: 0;
   text-align: center;
 }
+
+
+
