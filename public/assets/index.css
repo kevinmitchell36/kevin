@@ -35,19 +35,20 @@ a:hover {
 
 html,
 body {
-/*css for full size background image*/
-  background: url(http://cdn.history.com/sites/2/2014/01/kheti-tomb-P.jpeg) no-repeat center center fixed; 
+  /*css for full size background image*/
+  background: url(http://cdn.history.com/sites/2/2014/01/kheti-tomb-P.jpeg)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   height: 100%;
   background-color: #060;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
- 
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -56,8 +57,8 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -72,7 +73,6 @@ body {
 .inner {
   padding: 30px;
 }
-
 
 /*
  * Header
@@ -94,14 +94,14 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.95);
+  color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -110,15 +110,13 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+.nav {
+  display: -webkit-inline-box;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
-
 
 /*
  * Cover
@@ -132,16 +130,14 @@ body {
   font-weight: bold;
 }
 
-
 /*
  * Footer
  */
 
 .mastfoot {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
 }
-
 
 /*
  * Affix and center
