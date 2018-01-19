@@ -7,16 +7,8 @@ app.get("/", function(req, res) {
   res.render("pages/index");
 });
 
-app.get("/about", function(req, res) {
-  res.render("pages/about");
-});
-
 app.get("/resume", function(req, res) {
   res.render("pages/resume");
-});
-
-app.get("/projects", function(req, res) {
-  res.render("pages/projects");
 });
 
 app.get("/videos", function(req, res) {

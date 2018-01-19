@@ -2,7 +2,7 @@
   background-image: url("http://cdn.history.com/sites/2/2014/01/kheti-tomb-P.jpeg");
   background-color: #17234e;
   margin-bottom: 0;
-  min-height: 50%;
+
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -37,4 +37,9 @@
   display: inline-block;
   float: none;
   margin: 0;
+}
+
+.navbar-nav > li {
+  padding-left: 10px;
+  padding-right: 10px;
 }
