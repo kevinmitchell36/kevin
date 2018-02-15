@@ -5,6 +5,17 @@
       <link rel="stylesheet" href="/assets/bannerbar.css" type="text/css">
       <link rel="stylesheet" href="/assets/videotest.css" type="text/css">
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<script>
+function myFunction(str) { 
+  var myVideo = str;
+  var select = "https://www.youtube.com/embed/o1tj2zJ2Wvg";
+  if  (str) {
+    document.querySelector(".video").src = myVideo;
+  } else if (!document.querySelector(".video").src || document.querySelector(".video").src === "") {
+    document.querySelector(".video").src = select;
+  }
+}
+</script>
       
   </head>
 <body>
@@ -57,14 +68,14 @@
                 <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-star"></i> <span class="hidden-sm-down">Link</span></a>
             </div>
         </div>
-        <main class="col-md-9 col-xs-11 p-l-2 p-t-2">
+      <main class="col-md-9 col-xs-11 p-l-2 p-t-2">
         <div class="embed-responsive embed-responsive-16by9">
             <div class="container-fluid">
-            <iframe class="video" width="920" height="515"  src="myVideo" alt="">
-            </iframe>
-          </div>
-      </div>
-        </main>
+              <iframe class="video"  onload="myFunction()" width="920" height="515">
+              </iframe>
+            </div>
+        </div>
+      </main>
     </div>
   </div>
 
@@ -79,10 +90,4 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </body>  
 
-<script>
-function myFunction(str) { 
-  var myVideo = str;
-  document.querySelector(".video").src = myVideo;
-}
-</script>
 
